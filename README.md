@@ -202,6 +202,24 @@ vim.keymap.set("n", "<leader>si", "<CMD>SpringInitializr<CR>")
 vim.keymap.set("n", "<leader>sg", "<CMD>SpringGenerateProject<CR>")
 ```
 
+### Configuration options
+
+Optional configuration options:
+
+- config_format: "properties" or "yaml"
+- use_nerd_fonts: boolean (default: true)
+- persist_state: boolean (default: false)
+
+```lua
+local ConfigFormat = require("spring-initializr.constants.config_format")
+
+require("spring-initializr").setup({
+    config_format = ConfigFormat.YAML
+})
+```
+
+
+
 ## Keybindings
 
 ### Global
@@ -272,7 +290,6 @@ _First Donation 💛_ - Thanks Kevin we appreciate it a lot
 
 Here is the list of similar projects that might fit your use case better, show them some love:
 - https://github.com/niT-Tin/springboot-start.nvim
-- https://github.com/javiorfo/nvim-springtime
 
 
 ## License

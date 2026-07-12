@@ -48,15 +48,8 @@ local M = {}
 -- @param  user_config  table|nil  Optional configuration options
 --                                 Supported fields:
 --                                   - config_format: "properties" or "yaml"
---
--- @example
--- require("spring-initializr").setup()
---
--- @example
--- local ConfigFormat = require("spring-initializr.constants.config_format")
--- require("spring-initializr").setup({
---   config_format = ConfigFormat.YAML
--- })
+--                                   - use_nerd_fonts: boolean (default: true)
+--                                   - persist_state: boolean (default: false)
 --
 -----------------------------------------------------------------------------
 function M.setup(user_config)
