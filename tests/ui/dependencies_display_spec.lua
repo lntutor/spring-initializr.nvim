@@ -4,9 +4,13 @@
 --
 ----------------------------------------------------------------------------
 
+local picker = {
+    selected_dependencies_full = {},
+}
+package.loaded["spring-initializr.telescope.telescope"] = picker
+
 local dependencies_display =
     require("spring-initializr.ui.components.dependencies.dependencies_display")
-local picker = require("spring-initializr.telescope.telescope")
 
 describe("dependencies_display", function()
     local bufnr
