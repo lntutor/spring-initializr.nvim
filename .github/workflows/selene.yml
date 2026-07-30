@@ -1,5 +1,7 @@
 name: Selene Lint
 
+# cspell:ignore dtolnay
+
 on:
   push:
     branches: [ main ]

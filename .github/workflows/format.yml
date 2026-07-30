@@ -1,5 +1,7 @@
 name: format
 
+# cspell:ignore dtolnay
+
 on:
   push:
     branches: [ main ]
