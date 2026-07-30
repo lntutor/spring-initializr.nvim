@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Neovim (Latest Stable)
         run: |
@@ -37,4 +37,3 @@ jobs:
         run: |
             nvim --headless -u tests/minimal_init.lua \
             -c "PlenaryBustedDirectory tests --exclude-pattern telescope_integration_spec" +q
-
