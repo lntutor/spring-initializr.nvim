@@ -7,6 +7,7 @@
 local picker = {
     selected_dependencies_full = {},
 }
+package.loaded["nui.popup"] = function() end
 package.loaded["spring-initializr.telescope.telescope"] = picker
 
 local dependencies_display =
