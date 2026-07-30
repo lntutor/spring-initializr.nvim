@@ -30,7 +30,7 @@ jobs:
 
       - name: Install telescope.nvim dependency
         run: |
-          git clone --depth 1 https://github.com/nvim-telescope/telescope.nvim \
+          git clone --depth 1 --branch 0.1.x https://github.com/nvim-telescope/telescope.nvim \
             ~/.local/share/nvim/site/pack/vendor/start/telescope.nvim
 
       - name: Run tests (Plenary/Busted)
